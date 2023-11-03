@@ -1,0 +1,12 @@
+.feedbackbtnflex {
+  display: flex;
+  gap: 20px;
+}
+
+.feedbackbutton {
+  display: flex;
+  min-width: 60px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
