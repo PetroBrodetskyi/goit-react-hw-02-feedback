@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
-import Section from './Section/Section';
-import Statistics from './Statistics/Statistics';
-import Notification from './Notification/Notification';
+import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
+import Section from '../Section/Section';
+import Statistics from '../Statistics/Statistics';
+import Notification from '../Notification/Notification';
+import css from "./App.module.css"
 
 class App extends Component {
   state = {
@@ -23,7 +24,7 @@ class App extends Component {
     const positivePercentage = total === 0 ? 0 : ((good / total) * 100).toFixed(0);
 
     return (
-      <div class = "sectionflex">
+      <div className={css.sectionapp}>
         <Section title="Додати відгук">
           <FeedbackOptions options={['good', 'neutral', 'bad']} onLeaveFeedback={this.handleFeedback} />
         </Section>
