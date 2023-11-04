@@ -8,7 +8,7 @@ class FeedbackOptions extends Component {
       <div className={css.feedbackbtnflex}>
         {options.map((option) => (
           <button className={css.feedbackbutton} key={option} onClick={() => onLeaveFeedback(option)}>
-            {option.charAt(0).toUpperCase() + option.slice(1)}
+            {option[0].toLowerCase() + option.slice(1)}
           </button>
         ))}
       </div>

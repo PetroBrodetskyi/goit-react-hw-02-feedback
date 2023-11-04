@@ -23,7 +23,7 @@ class App extends Component {
     const positivePercentage = total === 0 ? 0 : ((good / total) * 100).toFixed(0);
 
     return (
-      <div>
+      <div class = "sectionflex">
         <Section title="Додати відгук">
           <FeedbackOptions options={['good', 'neutral', 'bad']} onLeaveFeedback={this.handleFeedback} />
         </Section>
